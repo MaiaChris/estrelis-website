@@ -1,9 +1,87 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/home.css';
 ---
 <BaseLayout title="Estrelis.ai — AI-Powered Medical Equipment Planning">
-  <div style="padding: 8rem 2rem; text-align: center;">
-    <h1 style="font-size: 2rem;">Layout works!</h1>
-    <p style="color: var(--text-muted); margin-top: 1rem;">Header, footer, and global styles are loading correctly.</p>
-  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="badge">&#x2728; THE FIRST AI-NATIVE MEP PLATFORM</div>
+      <h1>Medical Equipment Planning, <span class="gradient">Reimagined with AI</span></h1>
+      <p>From room-by-room equipment lists to procurement and installation — Estrelis brings intelligent automation to every step of healthcare facility planning.</p>
+      <div class="hero-buttons">
+        <a href="/contact" class="btn-primary btn-lg">Request a Demo</a>
+        <a href="/product" class="btn-secondary btn-lg">See How It Works &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <h2>Built for the way you actually work</h2>
+    <p>AI that understands medical equipment, not just spreadsheets.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon icon-cyan">&#x1F9E0;</div>
+        <h3>AI Equipment Matching</h3>
+        <p>Automatically match equipment specs to catalog items with confidence scoring. Review AI suggestions, not manual lookups.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-blue">&#x1F3D7;</div>
+        <h3>Revit Integration</h3>
+        <p>Sync equipment plans directly with your BIM models. Room-level coordination between design and planning teams.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-purple">&#x1F4CA;</div>
+        <h3>Live Budget Tracking</h3>
+        <p>Real-time budget visibility across departments, buildings, and project phases. No more spreadsheet reconciliation.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-cyan">&#x1F517;</div>
+        <h3>Procurement Workflow</h3>
+        <p>From RFQs to purchase orders — manage vendor coordination, quotes, and approvals in one place.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-blue">&#x1F465;</div>
+        <h3>Client Portal</h3>
+        <p>Give healthcare clients secure access to review equipment plans, approve budgets, and track project status.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-purple">&#x1F4F1;</div>
+        <h3>Field Inventory</h3>
+        <p>Capture existing equipment with iPad — 360° photos, barcode scanning, and AI-powered asset identification.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stats-grid">
+      <div>
+        <div class="stat-value">295K+</div>
+        <div class="stat-label">Equipment Items Managed</div>
+      </div>
+      <div>
+        <div class="stat-value">218</div>
+        <div class="stat-label">Healthcare Projects</div>
+      </div>
+      <div>
+        <div class="stat-value">85%</div>
+        <div class="stat-label">AI Match Accuracy</div>
+      </div>
+      <div>
+        <div class="stat-value">10x</div>
+        <div class="stat-label">Faster Than Spreadsheets</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Ready to modernize your equipment planning?</h2>
+    <p>See how Estrelis can transform your next healthcare project.</p>
+    <a href="/contact" class="btn-primary btn-lg">Request a Demo</a>
+  </section>
+
 </BaseLayout>
