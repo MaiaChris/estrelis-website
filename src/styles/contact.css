@@ -155,3 +155,29 @@ a.contact-info-value:hover {
     font-size: 2rem;
   }
 }
+
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 2rem 1rem 3rem;
+    gap: 2.5rem;
+  }
+
+  .contact-form-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .contact-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.85rem;
+  }
+
+  .contact-info-section h2 {
+    font-size: 1.15rem;
+  }
+}

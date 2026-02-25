@@ -181,3 +181,57 @@
     font-size: 1.8rem;
   }
 }
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 3rem 1rem 1.5rem;
+  }
+
+  .about-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .about-hero p {
+    font-size: 0.9rem;
+  }
+
+  .mission {
+    padding: 2.5rem 1rem;
+  }
+
+  .mission h2 {
+    font-size: 1.35rem;
+  }
+
+  .mission-text p {
+    font-size: 0.95rem;
+  }
+
+  .values {
+    padding: 2.5rem 1rem 3rem;
+  }
+
+  .value-card {
+    padding: 1.5rem;
+  }
+
+  .value-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .value-card p {
+    font-size: 0.85rem;
+  }
+
+  .cta {
+    padding: 4rem 1rem;
+  }
+
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta p {
+    font-size: 0.95rem;
+  }
+}

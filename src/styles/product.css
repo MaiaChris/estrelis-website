@@ -183,3 +183,46 @@
     font-size: 1.8rem;
   }
 }
+
+@media (max-width: 480px) {
+  .product-hero {
+    padding: 3rem 1rem 1.5rem;
+  }
+
+  .product-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .product-hero p {
+    font-size: 0.9rem;
+  }
+
+  .feature-detail {
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .feature-detail h2 {
+    font-size: 1.35rem;
+  }
+
+  .feature-detail p {
+    font-size: 0.9rem;
+  }
+
+  .feature-bullets li {
+    font-size: 0.85rem;
+  }
+
+  .cta {
+    padding: 4rem 1rem;
+  }
+
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta p {
+    font-size: 0.95rem;
+  }
+}
