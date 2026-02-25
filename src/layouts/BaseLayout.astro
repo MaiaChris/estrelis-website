@@ -15,7 +15,19 @@ const { title, description = 'AI-Powered Medical Equipment Planning — the firs
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <meta name="theme-color" content="#151921" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={`https://www.estrelis.ai${Astro.url.pathname}`} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={`https://www.estrelis.ai${Astro.url.pathname}`} />
+    <meta property="og:image" content="https://www.estrelis.ai/og-image.png" />
+    <meta property="og:site_name" content="Estrelis.ai" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://www.estrelis.ai/og-image.png" />
     <title>{title}</title>
   </head>
   <body>
