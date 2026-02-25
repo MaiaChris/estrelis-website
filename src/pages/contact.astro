@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/contact.css';
+---
+<BaseLayout title="Request a Demo — Estrelis.ai" description="Schedule a personalized demo and see how Estrelis can transform your equipment planning workflow.">
+
+  <div class="contact-page">
+    <!-- LEFT: FORM -->
+    <div class="contact-form-section">
+      <h1>Request a Demo</h1>
+      <p class="contact-subtitle">See how Estrelis can transform your equipment planning workflow.</p>
+
+      <form action="https://formspree.io/f/PLACEHOLDER" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@company.com" />
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" required placeholder="Your company" />
+        </div>
+        <div class="form-group">
+          <label for="role">Role / Title <span class="optional">(optional)</span></label>
+          <input type="text" id="role" name="role" placeholder="e.g. Equipment Planner" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message <span class="optional">(optional)</span></label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your project or what you'd like to see..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-lg contact-submit">Send Request</button>
+      </form>
+
+      <p class="form-note">We'll get back to you within one business day.</p>
+    </div>
+
+    <!-- RIGHT: CONTACT INFO -->
+    <div class="contact-info-section">
+      <h2>Other Ways to Reach Us</h2>
+
+      <div class="contact-info-item">
+        <div class="contact-info-label">Email</div>
+        <a href="mailto:hello@estrelis.ai" class="contact-info-value">hello@estrelis.ai</a>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-label">Location</div>
+        <div class="contact-info-value">United States</div>
+      </div>
+
+      <p class="contact-note">Estrelis.ai is a product built for the healthcare construction industry.</p>
+    </div>
+  </div>
+
+</BaseLayout>
