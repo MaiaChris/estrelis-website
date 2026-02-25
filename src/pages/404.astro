@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Page Not Found — Estrelis.ai">
+  <section class="not-found">
+    <h1>404</h1>
+    <p>This page doesn't exist.</p>
+    <a href="/" class="btn-primary">Back to Home</a>
+  </section>
+</BaseLayout>
+
+<style>
+  .not-found {
+    text-align: center;
+    padding: 8rem 2rem;
+  }
+  .not-found h1 {
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: -0.03em;
+  }
+  .not-found p {
+    color: var(--text-muted);
+    font-size: 1.25rem;
+    margin: 1rem 0 2rem;
+  }
+  .not-found a {
+    text-decoration: none;
+  }
+</style>
