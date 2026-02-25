@@ -31,20 +31,13 @@
 }
 
 .feature-detail {
-  display: flex;
-  gap: 4rem;
-  padding: 5rem 4rem;
-  max-width: 1200px;
+  padding: 4rem 4rem;
+  max-width: 800px;
   margin: 0 auto;
-  align-items: center;
 }
 
-.feature-detail:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.feature-detail-content {
-  flex: 1;
+.feature-detail + .feature-detail {
+  border-top: 1px solid var(--border);
 }
 
 .feature-label {
@@ -95,25 +88,6 @@
   background: var(--primary);
 }
 
-.feature-detail-visual {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.feature-placeholder {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-muted);
-  font-size: 0.9rem;
-}
 
 
 /* CTA (reuses home cta styles from home.css, re-declared here for standalone use) */
