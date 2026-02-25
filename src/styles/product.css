@@ -1,0 +1,185 @@
+/* ===========================
+   PRODUCT PAGE STYLES
+   =========================== */
+
+/* HERO */
+.product-hero {
+  text-align: center;
+  padding: 6rem 2rem 3rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.product-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.product-hero p {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+
+/* FEATURE DETAILS */
+.feature-details {
+  padding: 2rem 0;
+}
+
+.feature-detail {
+  display: flex;
+  gap: 4rem;
+  padding: 5rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.feature-detail:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.feature-detail-content {
+  flex: 1;
+}
+
+.feature-label {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+.feature-detail h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.75rem 0;
+  letter-spacing: -0.02em;
+}
+
+.feature-detail p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.feature-bullets {
+  list-style: none;
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+.feature-bullets li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.feature-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.feature-detail-visual {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+
+/* CTA (reuses home cta styles from home.css, re-declared here for standalone use) */
+.cta {
+  text-align: center;
+  padding: 8rem 2rem;
+  position: relative;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 50% 50%, hsla(210, 70%, 55%, 0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+  letter-spacing: -0.02em;
+}
+
+.cta p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.cta .btn-primary {
+  position: relative;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .product-hero {
+    padding: 4rem 1.5rem 2rem;
+  }
+
+  .product-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .product-hero p {
+    font-size: 1rem;
+  }
+
+  .feature-detail {
+    flex-direction: column !important;
+    padding: 3rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .feature-detail h2 {
+    font-size: 1.6rem;
+  }
+
+  .cta {
+    padding: 5rem 1.5rem;
+  }
+
+  .cta h2 {
+    font-size: 1.8rem;
+  }
+}
