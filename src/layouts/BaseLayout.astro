@@ -4,9 +4,11 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  noindex?: boolean;
 }
 
-const { title, description = 'AI-Powered Medical Equipment Planning — the first AI-native MEQ platform.' } = Astro.props;
+const { title, description = 'AI-powered medical equipment planning software for healthcare construction. Automate catalog management, Revit integration, budgeting, procurement, and field inventory.', noindex = false } = Astro.props;
+const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
 ---
 
 <!doctype html>
@@ -16,19 +18,69 @@ const { title, description = 'AI-Powered Medical Equipment Planning — the firs
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#151921" />
+    {noindex ? (
+      <meta name="robots" content="noindex, nofollow" />
+    ) : (
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    )}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="canonical" href={`https://www.estrelis.ai${Astro.url.pathname}`} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={`https://www.estrelis.ai${Astro.url.pathname}`} />
+    <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content="https://www.estrelis.ai/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Estrelis.ai — AI-Powered Medical Equipment Planning" />
     <meta property="og:site_name" content="Estrelis.ai" />
+    <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content="https://www.estrelis.ai/og-image.png" />
+    <meta name="twitter:image:alt" content="Estrelis.ai — AI-Powered Medical Equipment Planning" />
     <title>{title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.estrelis.ai/#organization",
+          "name": "Estrelis.ai",
+          "url": "https://www.estrelis.ai",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.estrelis.ai/og-image.png"
+          },
+          "description": "AI-powered medical equipment planning software for healthcare construction projects.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "email": "info@estrelis.ai"
+          },
+          "sameAs": []
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.estrelis.ai/#website",
+          "url": "https://www.estrelis.ai",
+          "name": "Estrelis.ai",
+          "publisher": { "@id": "https://www.estrelis.ai/#organization" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": canonicalUrl,
+          "url": canonicalUrl,
+          "name": title,
+          "description": description,
+          "isPartOf": { "@id": "https://www.estrelis.ai/#website" },
+          "about": { "@id": "https://www.estrelis.ai/#organization" }
+        }
+      ]
+    })} />
   </head>
   <body>
     <nav class="nav">
