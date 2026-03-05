@@ -111,7 +111,7 @@ const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
   </head>
   <body>
     <nav class="nav">
-      <a href="/" class="logo"><img src="/logo-icon.png" alt="Estrelis.ai" class="logo-icon" />estrelis<span>.ai</span></a>
+      <a href="/" class="logo"><img src="/logo-icon.png" alt="Estrelis.ai" class="logo-icon" /><span class="logo-text">estrelis<span>.ai</span></span></a>
       <ul class="nav-links">
         <li><a href="/product">Product</a></li>
         <li><a href="/about">About</a></li>
@@ -158,7 +158,7 @@ const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
     <footer class="footer">
       <div class="footer-top">
         <div class="footer-col">
-          <div class="footer-brand"><img src="/logo-icon.png" alt="Estrelis.ai" class="footer-logo-icon" />estrelis<span>.ai</span></div>
+          <div class="footer-brand"><img src="/logo-icon.png" alt="Estrelis.ai" class="footer-logo-icon" /><span class="logo-text">estrelis<span>.ai</span></span></div>
           <p class="footer-tagline">AI-powered medical equipment planning for healthcare construction.</p>
         </div>
         <div class="footer-col">
@@ -215,11 +215,11 @@ const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
     letter-spacing: -0.02em;
     text-decoration: none;
   }
-  .logo span { color: var(--primary); }
+  .logo-text span { color: var(--primary); }
   .logo-icon {
-    width: 32px;
-    height: 32px;
-    border-radius: 6px;
+    width: 38px;
+    height: 38px;
+    border-radius: 7px;
   }
 
   .nav-links {
@@ -315,7 +315,7 @@ const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
     font-weight: 800;
     margin-bottom: 0.5rem;
   }
-  .footer-brand span { color: var(--primary); }
+  .footer-brand .logo-text span { color: var(--primary); }
   .footer-logo-icon {
     width: 28px;
     height: 28px;
