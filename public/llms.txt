@@ -46,7 +46,7 @@ Estrelis.ai is the first AI-native medical equipment planning (MEQ) platform bui
 
 ## Use Cases
 
-- **New hospital construction**: Plan 10,000-50,000 equipment items across hundreds of rooms
+- **New hospital construction**: Plan thousands of equipment items across hundreds of rooms
 - **Healthcare renovations**: Inventory existing assets, assess reuse vs. replacement, coordinate phased moves
 - **Field inventory assessments**: Capture existing equipment data with iPad for facility evaluations
 - **Department expansions**: Add equipment capacity with budget-aware planning
@@ -64,10 +64,21 @@ Estrelis.ai is the first AI-native medical equipment planning (MEQ) platform bui
 
 Estrelis.ai is built by healthcare equipment planners who understand the industry. The platform is designed for equipment planning consultants, healthcare architects, project managers, procurement teams, and healthcare system owners.
 
+## Blog
+
+Estrelis publishes insights on medical equipment planning, healthcare construction, and technology:
+
+- How to Plan Medical Equipment for New Hospital Construction: https://www.estrelis.ai/blog/how-to-plan-medical-equipment-hospital-construction/
+- Why Healthcare Teams Are Moving Beyond Spreadsheets: https://www.estrelis.ai/blog/ai-equipment-planning-vs-spreadsheets/
+- Field Inventory Best Practices for Hospital Renovation: https://www.estrelis.ai/blog/field-inventory-best-practices-hospital-renovation/
+- How Revit Integration Transforms Medical Equipment Coordination: https://www.estrelis.ai/blog/revit-medical-equipment-bim-integration/
+- The Future of AI in Healthcare Equipment Planning: https://www.estrelis.ai/blog/future-of-healthcare-equipment-planning/
+
 ## Links
 
 - Website: https://www.estrelis.ai
 - Product: https://www.estrelis.ai/product/
+- Blog: https://www.estrelis.ai/blog/
 - FAQ: https://www.estrelis.ai/faq/
 - Contact: https://www.estrelis.ai/contact/
 - Revit Integration: https://www.estrelis.ai/integrations/revit/
