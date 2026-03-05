@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/content.css';
+import '../../styles/blog.css';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+<BaseLayout title="Blog — Healthcare Equipment Planning Insights | Estrelis.ai" description="Insights on medical equipment planning, hospital construction, AI automation, and healthcare facility management from the Estrelis team." breadcrumbs={[{name: "Blog", url: "/blog/"}]}>
+
+  <section class="content-hero">
+    <h1>Blog</h1>
+    <p>Insights on medical equipment planning, healthcare construction, and the technology transforming how hospitals get built.</p>
+  </section>
+
+  <section class="blog-listing">
+    <div class="blog-list">
+      {posts.map(post => (
+        <a href={`/blog/${post.id.replace(/\.md$/, '')}/`} class="blog-card">
+          <div class="blog-card-meta">
+            <time datetime={post.data.date.toISOString()}>
+              {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </time>
+            <span class="blog-meta-sep">&middot;</span>
+            <span>{post.data.author}</span>
+          </div>
+          <h2>{post.data.title}</h2>
+          <p>{post.data.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to modernize your equipment planning?</h2>
+    <p>See how Estrelis can transform your next healthcare project.</p>
+    <a href="/contact" class="btn-primary">Request a Demo</a>
+  </section>
+</BaseLayout>
