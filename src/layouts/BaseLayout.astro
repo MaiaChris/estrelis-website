@@ -89,7 +89,7 @@ const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
   </head>
   <body>
     <nav class="nav">
-      <a href="/" class="logo">estrelis<span>.ai</span></a>
+      <a href="/" class="logo"><img src="/logo-icon.png" alt="Estrelis.ai" class="logo-icon" />estrelis<span>.ai</span></a>
       <ul class="nav-links">
         <li><a href="/product">Product</a></li>
         <li><a href="/about">About</a></li>
@@ -136,7 +136,7 @@ const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
     <footer class="footer">
       <div class="footer-top">
         <div class="footer-col">
-          <div class="footer-brand">estrelis<span>.ai</span></div>
+          <div class="footer-brand"><img src="/logo-icon.png" alt="Estrelis.ai" class="footer-logo-icon" />estrelis<span>.ai</span></div>
           <p class="footer-tagline">AI-powered medical equipment planning for healthcare construction.</p>
         </div>
         <div class="footer-col">
@@ -185,11 +185,20 @@ const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
   }
 
   .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: -0.02em;
+    text-decoration: none;
   }
   .logo span { color: var(--primary); }
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+  }
 
   .nav-links {
     display: flex;
@@ -277,11 +286,19 @@ const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
   }
 
   .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: 1.25rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
   }
   .footer-brand span { color: var(--primary); }
+  .footer-logo-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+  }
 
   .footer-tagline {
     color: var(--text-muted);
@@ -341,7 +358,7 @@ const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
 
   @media (max-width: 480px) {
     .nav { padding: 0.75rem 1rem; }
-    .logo { font-size: 1.25rem; }
+    .logo img { height: 26px; }
     .footer { padding: 0 1rem; }
     .footer-top { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.5rem 0; }
     .footer-left { font-size: 0.75rem; }
