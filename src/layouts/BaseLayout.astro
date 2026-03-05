@@ -1,13 +1,19 @@
 ---
 import '../styles/global.css';
 
+interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
 interface Props {
   title: string;
   description?: string;
   noindex?: boolean;
+  breadcrumbs?: BreadcrumbItem[];
 }
 
-const { title, description = 'AI-powered medical equipment planning software for healthcare construction. Automate catalog management, Revit integration, budgeting, procurement, and field inventory.', noindex = false } = Astro.props;
+const { title, description = 'AI-powered medical equipment planning software for healthcare construction. Automate catalog management, Revit integration, budgeting, procurement, and field inventory.', noindex = false, breadcrumbs } = Astro.props;
 const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
 ---
 
@@ -86,6 +92,21 @@ const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
         }
       ]
     })} />
+    {breadcrumbs && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.estrelis.ai/" },
+          ...breadcrumbs.map((bc, i) => ({
+            "@type": "ListItem",
+            "position": i + 2,
+            "name": bc.name,
+            "item": `https://www.estrelis.ai${bc.url}`
+          }))
+        ]
+      })} />
+    )}
   </head>
   <body>
     <nav class="nav">
