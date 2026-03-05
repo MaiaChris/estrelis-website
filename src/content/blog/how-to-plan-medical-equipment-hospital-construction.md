@@ -7,7 +7,7 @@ date: 2026-03-05
 tags: ["equipment planning", "hospital construction", "new construction"]
 ---
 
-A new hospital project is not primarily a construction project. It is an equipment project with a building wrapped around it. The medical equipment — imaging systems, surgical suites, patient monitoring, lab analyzers, powered beds, nurse call infrastructure — represents tens of millions to hundreds of millions of dollars across hundreds of rooms. The building only works if the equipment works inside it. Yet equipment planning is consistently the most chaotic part of the process.
+A new hospital project is not primarily a construction project. It is an equipment project with a building wrapped around it. The medical equipment — imaging systems, surgical suites, patient monitoring, lab analyzers, powered beds, nurse call infrastructure — represents millions of dollars across hundreds of rooms. The building only works if the equipment works inside it. Yet equipment planning is consistently the most chaotic part of the process.
 
 This guide covers how to plan medical equipment for new hospital construction, step by step, and where the process most often breaks down.
 
