@@ -55,7 +55,7 @@ For departments with complex room configurations — surgical suites, imaging ro
 
 ## Technology That Improves Field Capture
 
-Modern field inventory platforms address the most common failure modes directly. Barcode and QR code scanning eliminates transcription errors on asset tags and serial numbers. Structured data entry with dropdown selections and controlled vocabularies keeps naming consistent across surveyors without relying on each person to know every device type.
+Modern field inventory platforms address the most common failure modes directly. Barcode and QR code scanning eliminates transcription errors on asset tags and serial numbers. AI-powered equipment identification takes minimal user input — a partial description, a category, a manufacturer — and matches it to accurate catalog records, so surveyors don't need to be experts on every device type to produce reliable data.
 
 Structured data entry with required fields prevents incomplete records from being submitted. Room-based workflows enforce spatial completeness. And platforms built for [hospital renovation projects](/use-cases/renovation/) integrate directly with equipment planning tools, so survey data flows into procurement lists, reuse registers, and budget models without manual re-entry.
 
