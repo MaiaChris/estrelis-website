@@ -7,7 +7,7 @@ date: 2026-03-05
 tags: ["equipment planning", "hospital construction", "new construction"]
 ---
 
-A new hospital project is not primarily a construction project. It is an equipment project with a building wrapped around it. The medical equipment — imaging systems, surgical suites, patient monitoring, lab analyzers, powered beds, nurse call infrastructure — represents hundreds of millions to billions of dollars across thousands of rooms. The building only works if the equipment works inside it. Yet equipment planning is consistently the most chaotic part of the process.
+A new hospital project is not primarily a construction project. It is an equipment project with a building wrapped around it. The medical equipment — imaging systems, surgical suites, patient monitoring, lab analyzers, powered beds, nurse call infrastructure — represents tens of millions to hundreds of millions of dollars across hundreds of rooms. The building only works if the equipment works inside it. Yet equipment planning is consistently the most chaotic part of the process.
 
 This guide covers how to plan medical equipment for new hospital construction, step by step, and where the process most often breaks down.
 
@@ -15,7 +15,7 @@ This guide covers how to plan medical equipment for new hospital construction, s
 
 ## The Scope of the Problem
 
-A 500-bed acute care hospital can have 50,000 to 150,000 individual equipment items spanning 800 or more distinct room types. Each room has spatial requirements, utility requirements, ADA constraints, and procurement lead times that must be coordinated with the construction schedule. Equipment decisions ripple into structural loads, electrical panels, medical gas drops, and millwork. Get them wrong late in construction and you are looking at costly change orders — or worse, equipment that simply does not fit.
+A 500-bed acute care hospital can have 5,000 to 15,000 individual equipment line items spanning 200 or more distinct room types. Each room has spatial requirements, utility requirements, ADA constraints, and procurement lead times that must be coordinated with the construction schedule. Equipment decisions ripple into structural loads, electrical panels, medical gas drops, and millwork. Get them wrong late in construction and you are looking at costly change orders — or worse, equipment that simply does not fit.
 
 The planning process starts much earlier than most project teams expect: typically at schematic design, 18 to 36 months before occupancy.
 
@@ -39,7 +39,7 @@ The catalog must be maintained actively throughout the project. Items need to be
 
 ## Step 3: Room-by-Room Equipment Planning
 
-Once the catalog and room program are established, planners assign equipment to rooms. This is where the real complexity lives. A single ICU room might have 40 to 80 line items. Multiply that across hundreds of rooms and you have tens of thousands of individual assignments, each of which can change as clinical requirements evolve, room designs shift, or catalog items are substituted.
+Once the catalog and room program are established, planners assign equipment to rooms. This is where the real complexity lives. A single ICU room might have 15 to 30 line items. Multiply that across hundreds of rooms and you have thousands of individual assignments, each of which can change as clinical requirements evolve, room designs shift, or catalog items are substituted.
 
 Room-by-room planning requires tight integration between the equipment list and the architectural drawings. When a room is redesigned, the equipment plan for that room needs to be reviewed. When an item is substituted, every room containing that item needs to be re-evaluated.
 
