@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/content.css';
+
+const faqs = [
+  {
+    q: "What is medical equipment planning software?",
+    a: "Medical equipment planning software helps healthcare organizations plan, track, and manage medical equipment across construction and renovation projects. It replaces spreadsheets and manual processes with centralized project management, automated catalog lookups, budget tracking, and procurement workflows — purpose-built for healthcare facilities."
+  },
+  {
+    q: "How does Estrelis use AI in equipment planning?",
+    a: "Estrelis uses AI across three core areas: intelligent spec matching (automatically matching imported equipment lists to our catalog), discontinued item detection (flagging end-of-life products before they reach purchase orders), and catalog item generation (creating new entries from vendor data with pre-populated fields). AI also powers asset identification during field inventory capture."
+  },
+  {
+    q: "Does Estrelis integrate with Revit?",
+    a: "Yes. Estrelis includes a desktop Revit plugin that provides two-way synchronization between equipment plans and BIM models. Room and level hierarchies flow from Revit, and equipment data syncs back — keeping design and planning teams coordinated. Supports Revit 2024 through 2026."
+  },
+  {
+    q: "How is Estrelis different from using spreadsheets?",
+    a: "Spreadsheets lack centralized catalog management, real-time budget visibility, multi-user collaboration, and procurement workflows. Estrelis replaces fragmented spreadsheets with a single platform where equipment planners, architects, procurement teams, and clients all work from the same data — with AI automating the repetitive catalog and matching work."
+  },
+  {
+    q: "Can clients and stakeholders access equipment plans?",
+    a: "Yes. The Estrelis Client Portal gives healthcare clients secure, passwordless access to review equipment plans, approve budgets, and track project status. Stakeholders receive a magic link via email — no passwords or training required."
+  },
+  {
+    q: "What types of healthcare projects does Estrelis support?",
+    a: "Estrelis supports new hospital construction, healthcare renovations, department expansions, equipment replacement programs, and facility assessments. The platform handles projects ranging from single-department renovations to multi-building campus developments with tens of thousands of equipment items."
+  },
+  {
+    q: "How does field inventory work?",
+    a: "Estrelis includes an iPad app for capturing existing equipment in the field. Teams can take 360-degree panoramic room photos, scan barcodes and asset labels, and use AI-powered equipment identification. Data syncs to the cloud and flows directly into project planning — no manual re-entry needed. The app works offline for hospital environments with limited WiFi."
+  },
+  {
+    q: "Is my data secure?",
+    a: "Yes. Estrelis is hosted on Microsoft Azure cloud infrastructure in the United States. All data is encrypted in transit (TLS) and at rest. We implement role-based access controls, audit logging, and security monitoring. Authentication uses Microsoft Entra ID (Azure Active Directory) for workforce users and secure OTP-based authentication for client portal users."
+  },
+  {
+    q: "How does procurement work in Estrelis?",
+    a: "Estrelis manages the full procurement lifecycle: generate RFQs from equipment lists, send to vendors, track and compare quotes, manage approval workflows, and generate purchase orders. Vendor coordination, quote comparison, and approval tracking happen in one place — replacing scattered emails and spreadsheets."
+  },
+  {
+    q: "How do I get started with Estrelis?",
+    a: "Contact us to schedule a personalized demo. We'll walk you through the platform using scenarios relevant to your projects. Estrelis is deployed as a cloud service — no on-premise installation required. Onboarding includes data migration from existing spreadsheets and catalog setup."
+  }
+];
+---
+<BaseLayout title="FAQ — Medical Equipment Planning Software Questions | Estrelis.ai" description="Frequently asked questions about Estrelis.ai medical equipment planning software. Learn about AI features, Revit integration, field inventory, procurement, security, and getting started.">
+
+  <section class="content-hero">
+    <h1>Frequently Asked Questions</h1>
+    <p>Common questions about Estrelis and medical equipment planning.</p>
+  </section>
+
+  <section class="content-section">
+    {faqs.map(faq => (
+      <div class="faq-item">
+        <h3>{faq.q}</h3>
+        <p>{faq.a}</p>
+      </div>
+    ))}
+  </section>
+
+  <section class="cta">
+    <h2>Have more questions?</h2>
+    <p>We'd love to hear from you.</p>
+    <a href="/contact" class="btn-primary btn-lg">Contact Us</a>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  })} />
+
+</BaseLayout>

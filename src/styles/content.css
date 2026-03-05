@@ -1,0 +1,128 @@
+.content-hero {
+  text-align: center;
+  padding: 6rem 2rem 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.content-hero h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+.content-hero p {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+.content-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+.content-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+.content-section p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.content-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+.content-section ul li {
+  color: var(--text-muted);
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+.content-section ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.content-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+}
+.content-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.content-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* FAQ specific */
+.faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 0;
+}
+.faq-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+.faq-item p {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* Compare specific */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+.compare-table th, .compare-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.compare-table th {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.compare-table td {
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+.compare-table td:first-child {
+  color: var(--text);
+  font-weight: 500;
+}
+.check { color: var(--primary); }
+.cross { color: var(--text-muted); opacity: 0.4; }
+
+@media (max-width: 768px) {
+  .content-hero { padding: 4rem 1.5rem 2rem; }
+  .content-hero h1 { font-size: 2rem; }
+  .content-section { padding: 2rem 1.5rem; }
+  .content-grid { grid-template-columns: 1fr; }
+  .compare-table { font-size: 0.85rem; }
+  .compare-table th, .compare-table td { padding: 0.75rem 0.5rem; }
+}
