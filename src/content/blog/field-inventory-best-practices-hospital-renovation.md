@@ -33,11 +33,11 @@ For each item, document:
 - **Utility connections and footprint** — power requirements, gas or vacuum connections, room square footage consumed. Critical for space planning and MEP design.
 - **Disposition recommendation** — retain in place, relocate, surplus, or replace. This should be a preliminary recommendation, not a final decision, but capturing it in the field accelerates the planning review.
 
-## Photo Documentation is Non-Negotiable
+## Photo Documentation Where It Counts
 
-Every item in the survey should have at least one photograph. For complex or high-value equipment, photograph the unit from multiple angles, capture the nameplate, and document the utility connections and surrounding clearances.
+Not every item needs a photograph, but the right items absolutely do. Focus photo documentation on three categories: **exemplar photos** of representative equipment types (one good photo per model that appears across multiple rooms), **high-cost equipment** where condition directly affects reuse or replacement decisions, and **equipment in less than "Good" condition** where visual evidence supports the disposition recommendation.
 
-Photos serve multiple functions. They give remote reviewers — equipment planners, clinical leadership, procurement teams — the ability to assess condition without returning to the site. They document the pre-renovation state of the space, which matters if disputes arise later. And they catch details surveyors miss in the field: a cracked housing, a missing accessory, a label that partially obscures the model number.
+For high-value or degraded assets, photograph the unit from multiple angles, capture the nameplate, and document the utility connections and surrounding clearances. These photos give remote reviewers — equipment planners, clinical leadership, procurement teams — the ability to assess condition without returning to the site. They also document the pre-renovation state, which matters if disputes arise later.
 
 For departments with complex room configurations — surgical suites, imaging rooms, ICU pods — [360-degree photography](/use-cases/field-inventory/) provides spatial context that a flat photo cannot. A single 360 image captures the full room layout, equipment positioning, and infrastructure, and can be revisited repeatedly during design without scheduling another site visit.
 
