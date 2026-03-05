@@ -1,0 +1,76 @@
+# Estrelis.ai
+
+> AI-powered medical equipment planning software for healthcare construction and renovation projects.
+
+## What is Estrelis?
+
+Estrelis.ai is the first AI-native medical equipment planning (MEQ) platform built specifically for healthcare facility construction and renovation. It replaces spreadsheets and manual processes with intelligent automation across the full equipment lifecycle: catalog management, room-by-room planning, budget tracking, Revit BIM integration, procurement, client collaboration, and field inventory.
+
+## Core Capabilities
+
+### AI-Powered Equipment Catalog
+- Centralized catalog with 295,000+ medical equipment items
+- Intelligent spec matching: import equipment lists from any source and AI matches them to catalog items with confidence scores
+- Discontinued item detection: flags end-of-life products before they reach purchase orders
+- AI catalog item generation: creates new entries from vendor data with pre-populated fields
+
+### Revit BIM Integration
+- Two-way Revit plugin synchronization (Revit 2024-2026)
+- Room and level hierarchies flow from Revit to equipment plans
+- Equipment data syncs back to BIM models
+- Desktop plugin, no cloud middleware required
+
+### Real-Time Budget Tracking
+- Budget rollups by department, building, and project phase
+- Variance alerts and trend analysis
+- Point-in-time snapshots and phase-over-phase comparison
+
+### Procurement Workflow
+- RFQ generation from equipment lists
+- Vendor quote comparison
+- Approval workflows
+- Purchase order generation
+
+### Client Portal
+- Passwordless access via magic link (email OTP)
+- Healthcare clients can review equipment plans and approve budgets
+- Real-time project status visibility
+- No training or passwords required
+
+### iPad Field Inventory
+- 360-degree panoramic room capture (Insta360 integration)
+- Barcode and asset label scanning
+- AI-powered equipment identification
+- Offline-capable for hospital environments
+- Data flows directly into project planning
+
+## Use Cases
+
+- **New hospital construction**: Plan 10,000-50,000 equipment items across hundreds of rooms
+- **Healthcare renovations**: Inventory existing assets, assess reuse vs. replacement, coordinate phased moves
+- **Field inventory assessments**: Capture existing equipment data with iPad for facility evaluations
+- **Department expansions**: Add equipment capacity with budget-aware planning
+- **Equipment replacement programs**: Track end-of-life items and plan upgrades
+
+## Technical Details
+
+- Cloud-hosted on Microsoft Azure (United States)
+- Authentication: Microsoft Entra ID (workforce) + OTP (client portal)
+- Data encrypted in transit (TLS) and at rest
+- Role-based access controls and audit logging
+- Multi-tenant SaaS architecture
+
+## Company
+
+Estrelis.ai is built by healthcare equipment planners who understand the industry. The platform is designed for equipment planning consultants, healthcare architects, project managers, procurement teams, and healthcare system owners.
+
+## Links
+
+- Website: https://www.estrelis.ai
+- Product: https://www.estrelis.ai/product/
+- FAQ: https://www.estrelis.ai/faq/
+- Contact: https://www.estrelis.ai/contact/
+- Revit Integration: https://www.estrelis.ai/integrations/revit/
+- New Construction: https://www.estrelis.ai/use-cases/new-construction/
+- Renovation: https://www.estrelis.ai/use-cases/renovation/
+- Field Inventory: https://www.estrelis.ai/use-cases/field-inventory/

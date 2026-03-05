@@ -138,4 +138,33 @@ import '../styles/product.css';
     <a href="/contact" class="btn-primary btn-lg">Request a Demo</a>
   </section>
 
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Estrelis.ai",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "AI-powered medical equipment planning software for healthcare construction and renovation projects. Features include AI catalog management, Revit BIM integration, real-time budget tracking, procurement workflows, client portal, and iPad field inventory.",
+    "url": "https://www.estrelis.ai/product/",
+    "offers": {
+      "@type": "Offer",
+      "category": "SaaS"
+    },
+    "publisher": {
+      "@id": "https://www.estrelis.ai/#organization"
+    },
+    "featureList": [
+      "AI-powered equipment catalog with 295,000+ items",
+      "Intelligent spec matching with confidence scores",
+      "Discontinued item detection",
+      "AI catalog item generation",
+      "Two-way Revit BIM synchronization",
+      "Real-time budget tracking by department, building, phase",
+      "RFQ generation and vendor quote comparison",
+      "Passwordless client portal with magic link access",
+      "iPad field inventory with 360° panoramic photos",
+      "Barcode scanning and AI asset identification"
+    ]
+  })} />
+
 </BaseLayout>

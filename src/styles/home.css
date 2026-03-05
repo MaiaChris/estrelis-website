@@ -212,6 +212,63 @@
 }
 
 
+/* EXPLORE */
+.explore {
+  padding: 6rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.explore h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.explore > p {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.explore-card {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.75rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.explore-card:hover {
+  border-color: hsl(220, 15%, 25%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px hsla(0, 0%, 0%, 0.3);
+}
+
+.explore-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.explore-card p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
 /* CTA */
 .cta {
   text-align: center;
@@ -279,6 +336,18 @@
     gap: 1rem;
   }
 
+  .explore {
+    padding: 4rem 1.5rem;
+  }
+
+  .explore h2 {
+    font-size: 1.8rem;
+  }
+
+  .explore-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .stats {
     padding: 3rem 1.5rem;
   }
@@ -330,6 +399,22 @@
   .hero-buttons .btn-secondary {
     width: 100%;
     justify-content: center;
+  }
+
+  .explore {
+    padding: 3rem 1rem;
+  }
+
+  .explore h2 {
+    font-size: 1.5rem;
+  }
+
+  .explore-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .explore-card {
+    padding: 1.25rem;
   }
 
   .features {

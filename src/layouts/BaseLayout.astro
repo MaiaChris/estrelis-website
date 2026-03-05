@@ -31,6 +31,7 @@ const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="canonical" href={canonicalUrl} />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="author" href="/llms.txt" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
@@ -133,12 +134,38 @@ const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
     </main>
 
     <footer class="footer">
-      <div class="footer-left">&copy; {new Date().getFullYear()} Estrelis.ai. All rights reserved.</div>
-      <ul class="footer-links">
-        <li><a href="/privacy">Privacy</a></li>
-        <li><a href="/terms">Terms</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
+      <div class="footer-top">
+        <div class="footer-col">
+          <div class="footer-brand">estrelis<span>.ai</span></div>
+          <p class="footer-tagline">AI-powered medical equipment planning for healthcare construction.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="/product">Features</a>
+          <a href="/integrations/revit/">Revit Integration</a>
+          <a href="/integrations/migration/">Platform Migration</a>
+          <a href="/faq/">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Use Cases</h4>
+          <a href="/use-cases/new-construction/">New Construction</a>
+          <a href="/use-cases/renovation/">Renovation</a>
+          <a href="/use-cases/field-inventory/">Field Inventory</a>
+        </div>
+        <div class="footer-col">
+          <h4>Compare</h4>
+          <a href="/compare/spreadsheets/">vs Spreadsheets</a>
+          <a href="/compare/traditional-planning/">vs Traditional Planning</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-left">&copy; {new Date().getFullYear()} Estrelis.ai. All rights reserved.</div>
+        <ul class="footer-links">
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="/terms">Terms</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
@@ -239,11 +266,59 @@ const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
 
   .footer {
     border-top: 1px solid var(--border);
-    padding: 3rem 4rem;
+    padding: 0 4rem;
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+    padding: 3rem 0;
+  }
+
+  .footer-brand {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+  .footer-brand span { color: var(--primary); }
+
+  .footer-tagline {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    max-width: 280px;
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .footer-col h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+  }
+  .footer-col a {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--text); }
+
+  .footer-bottom {
+    border-top: 1px solid var(--border);
+    padding: 1.5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .footer-left { color: var(--text-muted); font-size: 0.85rem; }
   .footer-links { display: flex; gap: 2rem; list-style: none; }
   .footer-links a {
@@ -259,13 +334,16 @@ const canonicalUrl = `https://www.estrelis.ai${Astro.url.pathname}`;
     .nav-cta { display: none; }
     .hamburger { display: flex; }
     .mobile-menu.active { display: flex; }
-    .footer { padding: 2rem 1.5rem; flex-direction: column; gap: 1rem; }
+    .footer { padding: 0 1.5rem; }
+    .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; padding: 2rem 0; }
+    .footer-bottom { flex-direction: column; gap: 1rem; padding: 1.5rem 0; }
   }
 
   @media (max-width: 480px) {
     .nav { padding: 0.75rem 1rem; }
     .logo { font-size: 1.25rem; }
-    .footer { padding: 1.5rem 1rem; }
+    .footer { padding: 0 1rem; }
+    .footer-top { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.5rem 0; }
     .footer-left { font-size: 0.75rem; }
     .footer-links { gap: 1.25rem; }
     .footer-links a { font-size: 0.75rem; }
